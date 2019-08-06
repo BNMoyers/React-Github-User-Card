@@ -1,0 +1,27 @@
+.App{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.ui.card{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./components/corkboard.jpg') 
+    
+}
+
+#polaroid{
+    
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px solid white;
+    border-bottom: 30px solid white;
+    
+
+}
+

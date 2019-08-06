@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Card from './components/Card';
-import './App.css';
+import UserCard from './components/Card';
+import 'semantic-ui-css/semantic.min.css'
 
 class App extends React.Component {
   constructor(){
@@ -36,10 +36,8 @@ getFollowers = () => {
   render() {  
   return (
     <div className="App">
-      <header className="App-header">
-     {console.log(this.state.userFollowers)}
-      </header>
-      <Card userData={this.state.userData}
+      
+      <UserCard userData={this.state.userData}
             userFollowers={this.state.userFollowers}/>
     </div>
   );

@@ -1,22 +1,31 @@
 import React from 'react';
+import { Card } from 'semantic-ui-react'
 
+import '../Card.css' 
 
-const Card = (props) => {
+const UserCard = (props) => {
    return (
-       <div>
-           <img src={props.userData.avatar_url} alt='avatar'/>
-         <h2>{props.userData.login} - {props.userData.name}</h2>  
-         <p>Blog: {props.userData.blog}</p>
+       <Card className = 'frame'>
+           <img id='polaroid' src={props.userData.avatar_url} alt='avatar'/>
+         <Card.Content>
+             <Card.Header>{props.userData.name} </Card.Header>  
+             <Card.Meta>- {props.userData.login}</Card.Meta>
+         <Card.Description>Blog: {props.userData.blog}
          <p> Location: {props.userData.location}</p>
+         </Card.Description>
+        </Card.Content>
+
          <p>Followers: {props.userFollowers.map(
              follower => {
                  return <div><img width='50' height='50' src={follower.avatar_url} alt='followers' />
                         <p>{follower.login} - {follower.name}</p>  </div>
              }
          )}</p>
-       </div>
+         
+         
+       </Card>
    )
 
 }
 
-export default Card;
+export default UserCard;
