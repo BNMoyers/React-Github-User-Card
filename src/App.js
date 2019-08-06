@@ -1,13 +1,13 @@
 import React from 'react';
-import CardList from './components/CardList'
-
+import axios from 'axios';
+import Card from './components/Card';
 import './App.css';
 
 class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      user: []
+      userData: []
   };
 }
 
@@ -18,21 +18,22 @@ componentDidMount() {
 getUsers = () => {
   axios
   .get('https://api.github.com/users/BNMoyers')
-  .then(res => this.setState({user: res.data}))
+  .then(res => this.setState({userData: res.data}))
   .catch(err => {console.log('error', err);});
 };
-  }
   
-  render(){  
+  
+  render() {  
   return (
     <div className="App">
       <header className="App-header">
        
       </header>
-      <CardList user={this.user}/>
+      <Card userData={this.state.userData}/>
     </div>
   );
     
+}
 }
 
 export default App;
