@@ -5,8 +5,8 @@ import '../Card.css'
 
 const UserCard = (props) => {
    return (
-       <Card className = 'frame'>
-           <img id='polaroid' src={props.userData.avatar_url} alt='avatar'/>
+       <Card >
+          <div id = 'frame'> <img id='polaroid' src={props.userData.avatar_url} alt='avatar'/>
          <Card.Content>
              <Card.Header>{props.userData.name} </Card.Header>  
              <Card.Meta>- {props.userData.login}</Card.Meta>
@@ -14,11 +14,11 @@ const UserCard = (props) => {
          <p> Location: {props.userData.location}</p>
          </Card.Description>
         </Card.Content>
-
-         <p>Followers: {props.userFollowers.map(
+            </div>
+         <p id='followerGrid'> {props.userFollowers.map(
              follower => {
-                 return <div><img width='50' height='50' src={follower.avatar_url} alt='followers' />
-                        <p>{follower.login} - {follower.name}</p>  </div>
+                 return <div id='follower'><img width='100' height='100'  src={follower.avatar_url} alt='followers' />
+                        <p>{follower.login}</p>  </div>
              }
          )}</p>
          

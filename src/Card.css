@@ -10,7 +10,8 @@ div.ui.card{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./components/corkboard.jpg') 
+    background-image: url('./components/corkboard.jpg'); 
+    border: 50px solid black;
     
 }
 
@@ -18,10 +19,34 @@ div.ui.card{
     
     width: 200px;
     height: 200px;
+    padding: 0;
+    
+    
+}
+
+div.content{
+    background-color: white;
+}
+
+#frame{
     margin: 10px;
     border: 10px solid white;
     border-bottom: 30px solid white;
     
-
 }
 
+#followerGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#follower{
+    width: 130px;
+    background-color: white;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
