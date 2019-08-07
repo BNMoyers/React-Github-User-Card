@@ -1,0 +1,53 @@
+.App{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.ui.card{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./components/corkboard.jpg'); 
+    border: 50px solid black;
+    
+}
+
+#polaroid{
+    
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    
+    
+    
+}
+
+div.content{
+    background-color: white;
+}
+
+#frame{
+    margin: 10px;
+    border: 10px solid white;
+    border-bottom: 30px solid white;
+    
+}
+
+#followerGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#follower{
+    width: 130px;
+    background-color: white;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
