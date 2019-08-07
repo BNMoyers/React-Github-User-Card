@@ -17,7 +17,7 @@ const UserCard = (props) => {
             </div>
          <p id='followerGrid'> {props.userFollowers.map(
              follower => {
-                 return <div id='follower'><img width='100' height='100'  src={follower.avatar_url} alt='followers' />
+                 return <div id='follower'><img width='100' height='100' src={follower.avatar_url} alt='followers' />
                         <p>{follower.login}</p>  </div>
              }
          )}</p>
