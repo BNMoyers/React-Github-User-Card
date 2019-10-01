@@ -18,10 +18,13 @@ class App extends React.Component {
 
   render(){
   return (
-    <div className="App">
+    <>
+    <div className="corkboard">
       <UserCard user={this.state.user} />
       <FollowerList />
     </div>
+    <div className='credits'>resources from: <a href="https://unsplash.com/@dvandijk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David van Dijk</a>,<a href="https://www.freepik.com/free-photos-vectors/frame">Layerace</a></div>
+  </>
   );
 }
 }

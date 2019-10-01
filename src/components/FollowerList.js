@@ -1,5 +1,4 @@
 import React from 'react';
-import FollowerCard from './FollowerCard';
 import Axios from 'axios';
 
 class FollowerList extends React.Component {
