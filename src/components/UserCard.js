@@ -2,7 +2,14 @@ import React from 'react';
 
 const UserCard = (props) => {
     return(
-        <div>{props.user.name}</div>
+        <div className="usercard">
+        <img src={props.user.avatar_url} alt='avatar'>
+        </img>
+        <div className='user-bio'>
+        {props.user.name} - <span><a href={props.user.html_url}>{props.user.login}</a></span>
+        
+        </div>
+        </div>
     )
 }
 

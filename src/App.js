@@ -23,7 +23,7 @@ class App extends React.Component {
       <UserCard user={this.state.user} />
       <FollowerList />
     </div>
-    <div className='credits'>resources from: <a href="https://unsplash.com/@dvandijk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David van Dijk</a>,<a href="https://www.freepik.com/free-photos-vectors/frame">Layerace</a></div>
+    <div className='credits'>resources from: <a href="https://unsplash.com/@dvandijk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David van Dijk</a>,<a href="https://www.freepik.com/free-photos-vectors/frame">Layerace</a>, <a href="https://www.freepik.com/free-photos-vectors/technology">freepik</a>, <a href="https://www.freepik.com/free-photos-vectors/frame">kstudio</a></div>
   </>
   );
 }
