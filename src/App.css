@@ -162,3 +162,42 @@ body{
     margin-top:15px;
     margin-left: 10px;
 }
+
+.credits{
+    background-image:url('./images/paper.png');
+    background-size: contain;
+    height:250px;
+    width: 150px;
+    position: absolute;
+    top: 45vh;
+    right: 2vw;
+    text-align: center;
+    }
+
+    .credits h2{
+        font-weight: bold;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .credits ul{
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px; 
+    }
+
+    ul span{
+        font-weight: bold;
+    }
+
+    li {
+        margin: 3px;
+    }
+    li a{
+        color: black;
+        font-style: italic;
+    }
