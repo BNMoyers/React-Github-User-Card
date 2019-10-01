@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FollowerCard = () => {
+const FollowerCard = (props) => {
     return(
-        <div>this is a follower's card</div>
+        <div>{props.follower.login}</div>
     )
 }
 
